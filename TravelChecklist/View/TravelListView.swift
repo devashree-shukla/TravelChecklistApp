@@ -11,7 +11,8 @@ import SwiftData
 struct TravelListView: View {
     
     @Environment(\.modelContext) private var modelContext
-    @Query(sort: [SortDescriptor(\Trip.createdAt, order: .reverse)]) var items: [Trip]
+    @Query(sort: [SortDescriptor(\Travel.createdAt, order: .reverse)]) 
+    var items: [Travel]
     @State private var isViewVisible = false
     
     var body: some View {
@@ -22,11 +23,11 @@ struct TravelListView: View {
             }
                         
             List {
-                ForEach(items) { trip in
+                ForEach(items) { travel in
                     NavigationLink {
                         TravelChecklistView()
                     } label: {
-                        TripCellView(trip: trip)
+                        TripCellView(travel: travel)
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -35,11 +36,11 @@ struct TravelListView: View {
                 ToolbarItem {
                     if isViewVisible {
                         Button(action: addItem) {
-                            Label("Close New Trip", systemImage: "xmark.app.fill")
+                            Label("Close New Travel", systemImage: "xmark.app.fill")
                         }
                     } else {
                         Button(action: addItem) {
-                            Label("Add New Trip", systemImage: "plus")
+                            Label("Add New Travel", systemImage: "plus")
                         }
                     }
                 }
@@ -68,5 +69,5 @@ struct TravelListView: View {
 
 #Preview {
     TravelListView()
-        .modelContainer(for: Trip.self, inMemory: true)
+        .modelContainer(for: Travel.self, inMemory: true)
 }

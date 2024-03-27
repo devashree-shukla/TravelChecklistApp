@@ -30,5 +30,5 @@ struct TripChecklistCellView: View {
 
 #Preview {
     TripChecklistCellView(item: ItemChecklist(name: "Brush", isPacked: false))
-        .modelContainer(for: Trip.self, inMemory: true)
+        .modelContainer(for: Travel.self, inMemory: true)
 }

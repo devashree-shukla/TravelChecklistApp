@@ -31,6 +31,18 @@ struct TravelChecklistView: View {
                     }
                 }
             }
+            .toolbar {
+                ToolbarItem {
+                    Button(action: clearSelection) {
+                        Label("Clear Selection", systemImage: "xmark")
+                    }
+                }
+                ToolbarItem {
+                    Button(action: markTripAsComplete) {
+                        Label("Mark Travel as Complete", systemImage: "exclamationmark.octagon.fill")
+                    }
+                }
+            }
             .navigationTitle(Constants.NavigationTitles.checklists)
         }
     }
@@ -51,6 +63,14 @@ struct TravelChecklistView: View {
             UserDefaults.standard.synchronize()
         }
         return !hasLaunched
+    }
+    
+    private func clearSelection() {
+        //TODO:
+    }
+    
+    private func markTripAsComplete() {
+        //TODO:
     }
 }
 

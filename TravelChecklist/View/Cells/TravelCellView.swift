@@ -10,24 +10,24 @@ import SwiftData
 
 struct TripCellView: View {
     
-    var trip: Trip
+    var travel: Travel
     private var tripStatus: String {
-        trip.isOngoing ? Constants.Texts.ongoingTrip : (trip.isCompleted ? Constants.Texts.completedTrip : Constants.Texts.upcomingTrip)
+        travel.isOngoing ? Constants.Texts.ongoingTrip : (travel.isCompleted ? Constants.Texts.completedTrip : Constants.Texts.upcomingTrip)
     }
     private var tripStatusColor: Color {
-        trip.isOngoing ? .orange : (trip.isCompleted ? .green : .gray)
+        travel.isOngoing ? .orange : (travel.isCompleted ? .green : .gray)
     }
     
     var body: some View {
         HStack {
-            Text(trip.name)
+            Text(travel.name)
             Spacer()
             Text(tripStatus).foregroundColor(tripStatusColor)
-            DoneImage(isDone: trip.isCompleted)
+            DoneImage(isDone: travel.isCompleted)
         }
         .allowsHitTesting(false)
         .onTapGesture {
-            trip.isCompleted.toggle()
+            travel.isCompleted.toggle()
         }
     }
     
@@ -35,6 +35,6 @@ struct TripCellView: View {
 
 
 #Preview {
-    TripCellView(trip: Trip(name: "Rishikesh", isCompleted: true))
-        .modelContainer(for: Trip.self, inMemory: true)
+    TripCellView(travel: Travel(name: "Rishikesh", isCompleted: true))
+        .modelContainer(for: Travel.self, inMemory: true)
 }

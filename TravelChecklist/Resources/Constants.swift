@@ -15,16 +15,16 @@ struct Constants {
     }
     
     struct ButtonTitles {
-        static let createNewTrip = "Create New Trip"
+        static let createNewTrip = "Create New Travel"
     }
     
     struct Texts {
-        static let createNewTripTitle = "Enter New Trip Name"
+        static let createNewTripTitle = "Enter New Travel Name"
         static let dateFormmatter = "yyyy-MM-dd HH:mm:ss"
         static let blankText = ""
-        static let completedTrip = "Completed Trip"
-        static let upcomingTrip = "Upcoming Trip"
-        static let ongoingTrip = "Ongoing Trip"
+        static let completedTrip = "Completed Travel"
+        static let upcomingTrip = "Upcoming Travel"
+        static let ongoingTrip = "Ongoing Travel"
     }
     
     struct UserDefaultKeys {

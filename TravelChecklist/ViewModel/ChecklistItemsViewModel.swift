@@ -73,7 +73,7 @@ let defaultChecklistItems = [ItemChecklist(name: "Tooth paste", category: .OralC
                               ItemChecklist(name: "Home remedies like ajwain , long, mukhwas, sonth, hajma, jaljeera etc for stomuch problems", category: .Extra, isPacked: false),
                               ItemChecklist(name: "Mini Scents / Attars / Deodorants (Should be in check-in bag, not hand luggage)", category: .Extra, isPacked: false),
                               ItemChecklist(name: "Masks", category: .Extra, isPacked: false),
-                              ItemChecklist(name: "Water bottle (can use the first plastic bottle you buy on trip)", category: .Extra, isPacked: false),
+                              ItemChecklist(name: "Water bottle (can use the first plastic bottle you buy on travel)", category: .Extra, isPacked: false),
                               ItemChecklist(name: "Mouth freshner", category: .Extra, isPacked: false),
                               ItemChecklist(name: "Peperments", category: .Extra, isPacked: false),
                               ItemChecklist(name: "Purse / hang bag to carry around", category: .Extra, isPacked: false),

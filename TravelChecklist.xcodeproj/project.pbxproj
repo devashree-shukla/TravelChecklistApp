@@ -10,7 +10,7 @@
 		7A8E1DAA2BB179F5003286D4 /* ItemChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1DA22BB179F4003286D4 /* ItemChecklist.swift */; };
 		7A8E1DAD2BB179F5003286D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E1DA72BB179F4003286D4 /* Assets.xcassets */; };
 		7A8E1DAE2BB179F5003286D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E1DA92BB179F4003286D4 /* Preview Assets.xcassets */; };
-		7A9F72242BB1DFEC00E24013 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F72232BB1DFEC00E24013 /* Trip.swift */; };
+		7A9F72242BB1DFEC00E24013 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F72232BB1DFEC00E24013 /* Travel.swift */; };
 		7AA574312BAED70B00A88AFC /* TravelChecklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA574302BAED70B00A88AFC /* TravelChecklistTests.swift */; };
 		7AA5743B2BAED70B00A88AFC /* TravelChecklistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5743A2BAED70B00A88AFC /* TravelChecklistUITests.swift */; };
 		7AA5743D2BAED70B00A88AFC /* TravelChecklistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5743C2BAED70B00A88AFC /* TravelChecklistUITestsLaunchTests.swift */; };
@@ -19,11 +19,11 @@
 		7AB651412BB2B2C200A6C15C /* TravelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB651382BB2B2C200A6C15C /* TravelListView.swift */; };
 		7AB651422BB2B2C200A6C15C /* TravelChecklistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB651392BB2B2C200A6C15C /* TravelChecklistApp.swift */; };
 		7AB651432BB2B2C200A6C15C /* TravelChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513A2BB2B2C200A6C15C /* TravelChecklistView.swift */; };
-		7AB651442BB2B2C200A6C15C /* TripChecklistCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513C2BB2B2C200A6C15C /* TripChecklistCellView.swift */; };
-		7AB651452BB2B2C200A6C15C /* TripCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513D2BB2B2C200A6C15C /* TripCellView.swift */; };
+		7AB651442BB2B2C200A6C15C /* TravelChecklistCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513C2BB2B2C200A6C15C /* TravelChecklistCellView.swift */; };
+		7AB651452BB2B2C200A6C15C /* TravelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513D2BB2B2C200A6C15C /* TravelCellView.swift */; };
 		7AB651462BB2B2C200A6C15C /* DoneImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6513F2BB2B2C200A6C15C /* DoneImage.swift */; };
 		7AB651472BB2B2C200A6C15C /* CheckImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB651402BB2B2C200A6C15C /* CheckImage.swift */; };
-		7AB6514B2BB2C5C700A6C15C /* NewTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6514A2BB2C5C700A6C15C /* NewTripView.swift */; };
+		7AB6514B2BB2C5C700A6C15C /* NewTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6514A2BB2C5C700A6C15C /* NewTravelView.swift */; };
 		7AB6514D2BB2D4A400A6C15C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6514C2BB2D4A400A6C15C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		7A8E1DA22BB179F4003286D4 /* ItemChecklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemChecklist.swift; sourceTree = "<group>"; };
 		7A8E1DA72BB179F4003286D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A8E1DA92BB179F4003286D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7A9F72232BB1DFEC00E24013 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		7A9F72232BB1DFEC00E24013 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
 		7AA5741A2BAED70A00A88AFC /* TravelChecklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelChecklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA5742C2BAED70B00A88AFC /* TravelChecklistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelChecklistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA574302BAED70B00A88AFC /* TravelChecklistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelChecklistTests.swift; sourceTree = "<group>"; };
@@ -60,11 +60,11 @@
 		7AB651382BB2B2C200A6C15C /* TravelListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelListView.swift; sourceTree = "<group>"; };
 		7AB651392BB2B2C200A6C15C /* TravelChecklistApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelChecklistApp.swift; sourceTree = "<group>"; };
 		7AB6513A2BB2B2C200A6C15C /* TravelChecklistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelChecklistView.swift; sourceTree = "<group>"; };
-		7AB6513C2BB2B2C200A6C15C /* TripChecklistCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripChecklistCellView.swift; sourceTree = "<group>"; };
-		7AB6513D2BB2B2C200A6C15C /* TripCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripCellView.swift; sourceTree = "<group>"; };
+		7AB6513C2BB2B2C200A6C15C /* TravelChecklistCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelChecklistCellView.swift; sourceTree = "<group>"; };
+		7AB6513D2BB2B2C200A6C15C /* TravelCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelCellView.swift; sourceTree = "<group>"; };
 		7AB6513F2BB2B2C200A6C15C /* DoneImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneImage.swift; sourceTree = "<group>"; };
 		7AB651402BB2B2C200A6C15C /* CheckImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckImage.swift; sourceTree = "<group>"; };
-		7AB6514A2BB2C5C700A6C15C /* NewTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripView.swift; sourceTree = "<group>"; };
+		7AB6514A2BB2C5C700A6C15C /* NewTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTravelView.swift; sourceTree = "<group>"; };
 		7AB6514C2BB2D4A400A6C15C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 		7A8E1DA12BB179F4003286D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A9F72232BB1DFEC00E24013 /* Trip.swift */,
+				7A9F72232BB1DFEC00E24013 /* Travel.swift */,
 				7AB6512A2BB1E27600A6C15C /* ItemCategory.swift */,
 				7A8E1DA22BB179F4003286D4 /* ItemChecklist.swift */,
 			);
@@ -119,7 +119,7 @@
 				7AB651392BB2B2C200A6C15C /* TravelChecklistApp.swift */,
 				7AB6513A2BB2B2C200A6C15C /* TravelChecklistView.swift */,
 				7AB651382BB2B2C200A6C15C /* TravelListView.swift */,
-				7AB6514A2BB2C5C700A6C15C /* NewTripView.swift */,
+				7AB6514A2BB2C5C700A6C15C /* NewTravelView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,8 +193,8 @@
 		7AB6513B2BB2B2C200A6C15C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7AB6513C2BB2B2C200A6C15C /* TripChecklistCellView.swift */,
-				7AB6513D2BB2B2C200A6C15C /* TripCellView.swift */,
+				7AB6513C2BB2B2C200A6C15C /* TravelChecklistCellView.swift */,
+				7AB6513D2BB2B2C200A6C15C /* TravelCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -339,14 +339,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB651422BB2B2C200A6C15C /* TravelChecklistApp.swift in Sources */,
-				7AB651452BB2B2C200A6C15C /* TripCellView.swift in Sources */,
+				7AB651452BB2B2C200A6C15C /* TravelCellView.swift in Sources */,
 				7AB651462BB2B2C200A6C15C /* DoneImage.swift in Sources */,
-				7A9F72242BB1DFEC00E24013 /* Trip.swift in Sources */,
+				7A9F72242BB1DFEC00E24013 /* Travel.swift in Sources */,
 				7AB651472BB2B2C200A6C15C /* CheckImage.swift in Sources */,
 				7AB6512B2BB1E27600A6C15C /* ItemCategory.swift in Sources */,
-				7AB6514B2BB2C5C700A6C15C /* NewTripView.swift in Sources */,
+				7AB6514B2BB2C5C700A6C15C /* NewTravelView.swift in Sources */,
 				7AB6514D2BB2D4A400A6C15C /* Constants.swift in Sources */,
-				7AB651442BB2B2C200A6C15C /* TripChecklistCellView.swift in Sources */,
+				7AB651442BB2B2C200A6C15C /* TravelChecklistCellView.swift in Sources */,
 				7A8E1DAA2BB179F5003286D4 /* ItemChecklist.swift in Sources */,
 				7AB651412BB2B2C200A6C15C /* TravelListView.swift in Sources */,
 				7AB651332BB2970400A6C15C /* ChecklistItemsViewModel.swift in Sources */,

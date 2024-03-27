@@ -1,5 +1,5 @@
 //
-//  Trip.swift
+//  Travel.swift
 //  TravelChecklist
 //
 //  Created by devashree shukla on 25/03/24.
@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Trip: Identifiable {
+final class Travel: Identifiable {
    
     var id: UUID
     var name: String

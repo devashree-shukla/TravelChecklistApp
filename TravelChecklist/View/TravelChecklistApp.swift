@@ -14,7 +14,7 @@ struct TravelChecklistApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             ItemChecklist.self,
-            Trip.self
+            Travel.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -36,7 +36,7 @@ struct TravelChecklistApp: App {
 }
 
 //TODO:
-//manage data per trip
-//Add mark trip as complete inside
+//manage data per travel
 //Filter trips
 //Filter checklist
+

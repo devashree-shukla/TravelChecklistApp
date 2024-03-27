@@ -22,7 +22,7 @@ struct NewTripView: View {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = Constants.Texts.dateFormmatter
                     let dateString = dateFormatter.string(from: Date())
-                    let newTrip = Trip(name: newTripName, isCompleted: false, createdAt: dateString)
+                    let newTrip = Travel(name: newTripName, isCompleted: false, createdAt: dateString)
                     modelContext.insert(newTrip)
                 }
                 newTripName = Constants.Texts.blankText
