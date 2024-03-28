@@ -14,7 +14,7 @@ This repository hosts a comprehensive demo project that illustrates the use of S
 - **Basic Design Patterns**: Implements basic design patterns to organize code, enhance reusability, and simplify maintenance.
 - **Code Quality**: Adheres to Swift best practices to ensure high code quality, including the use of SwiftLint for linting and code style enforcement.
 
-![Simulator Screenshot - iPhone 15 - 2024-03-28 at 14 16 36](https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/d51a4356-1e28-44df-a865-bfe98b2ae107)
+![Simulator Screenshot - iPhone 15 - 2024-03-28 at 14 16 36](https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/d51a4356-1e28-44df-a865-bfe98b2ae107){:height="100px" width="60px"}
 ![Simulator Screenshot - iPhone 15 - 2024-03-28 at 14 16 32](https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/cee8d81b-2d23-4ffc-8aa4-122b8208c2a1)
 ![Simulator Screenshot - iPhone 15 - 2024-03-28 at 14 16 26](https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/31699b43-a2ef-473e-9c86-b563de41df61)
 ![Simulator Screenshot - iPhone 15 - 2024-03-28 at 14 16 10](https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/a8561b1a-b8e8-40b0-9dbb-d927e0b1d1ec)
