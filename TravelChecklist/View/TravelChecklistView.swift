@@ -12,21 +12,24 @@ import SwiftData
 struct TravelChecklistView: View {
     
     @Environment(\.modelContext) private var modelContext
+    var travel: Travel
     
     var body: some View {
-        let _ = saveItems()
-        
-        let groupedDictionary = Dictionary(grouping: defaultChecklistItems) { $0.category }
+        let groupedDictionary = Dictionary(grouping: travel.checklistItems) { $0.category }
         let result = Dictionary(uniqueKeysWithValues: groupedDictionary.map {
-            (ItemCategory(rawValue: String($0.rawValue))!, $1)
+            (ItemCategory(rawValue: String($0))!, $1)
         })
         
         NavigationStack {
+            if travel.isCompleted {
+                Text(travel.travelStatus).foregroundColor(travel.travelStatusColor)
+            }
             List {
                 ForEach(Array(result.keys.sorted()), id: \.self) { section in
                     Section(header: Text(section.rawValue)) {
                         ForEach(result[section] ?? []) { item in
-                            TripChecklistCellView(item: item)
+                            TravelChecklistCellView(item: item)
+                                .allowsHitTesting(!travel.isCompleted)
                         }
                     }
                 }
@@ -36,47 +39,35 @@ struct TravelChecklistView: View {
                     Button(action: clearSelection) {
                         Label("Clear Selection", systemImage: "xmark")
                     }
+                    .allowsHitTesting(!travel.isCompleted)
                 }
                 ToolbarItem {
-                    Button(action: markTripAsComplete) {
+                    Button(action: markTravelAsComplete) {
                         Label("Mark Travel as Complete", systemImage: "exclamationmark.octagon.fill")
                     }
+                    .allowsHitTesting(!travel.isCompleted)
                 }
             }
             .navigationTitle(Constants.NavigationTitles.checklists)
         }
     }
     
-    //TODO: Organize this code
-    private func saveItems() {
-        if isFirstLaunch() {
-            for item in defaultChecklistItems {
-                modelContext.insert(item)
-            }
-        }
-    }
-    
-    func isFirstLaunch() -> Bool {
-        let hasLaunched = UserDefaults.standard.bool(forKey: Constants.UserDefaultKeys.hasLaunched)
-        if !hasLaunched {
-            UserDefaults.standard.set(true, forKey: Constants.UserDefaultKeys.hasLaunched)
-            UserDefaults.standard.synchronize()
-        }
-        return !hasLaunched
-    }
-    
     private func clearSelection() {
-        //TODO:
+        guard !travel.isCompleted else { return }
+        travel.checklistItems.forEach { item in
+            item.isPacked = false
+        }
     }
     
-    private func markTripAsComplete() {
-        //TODO:
+    private func markTravelAsComplete() {
+        guard !travel.isCompleted else { return }
+        travel.isCompleted = true
     }
 }
 
 
 #Preview {
-    TravelChecklistView()
+    TravelChecklistView(travel: Travel(name: "A travel", checklistItems: defaultChecklistItems))
         .modelContainer(for: ItemChecklist.self, inMemory: true)
 }
 

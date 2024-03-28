@@ -36,7 +36,6 @@ struct TravelChecklistApp: App {
 }
 
 //TODO:
-//manage data per travel
-//Filter trips
+//Filter travels
 //Filter checklist
 

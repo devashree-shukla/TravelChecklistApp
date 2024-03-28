@@ -11,23 +11,22 @@ import SwiftData
 struct TravelListView: View {
     
     @Environment(\.modelContext) private var modelContext
-    @Query(sort: [SortDescriptor(\Travel.createdAt, order: .reverse)]) 
-    var items: [Travel]
+    @Query(sort: [SortDescriptor(\Travel.createdAt, order: .reverse)]) var items: [Travel]
     @State private var isViewVisible = false
+    @State private var isSorted = false
     
     var body: some View {
-        NavigationSplitView {
-            
+        NavigationStack {
             if isViewVisible {
-                NewTripView()
+                NewTravelView()
             }
-                        
+            
             List {
                 ForEach(items) { travel in
                     NavigationLink {
-                        TravelChecklistView()
+                        TravelChecklistView(travel: travel)
                     } label: {
-                        TripCellView(travel: travel)
+                        TravelCellView(travel: travel)
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -45,8 +44,7 @@ struct TravelListView: View {
                     }
                 }
             }
-            .navigationTitle(Constants.NavigationTitles.trips)
-        } detail: {
+            .navigationTitle(Constants.NavigationTitles.travels)
         }
     }
 
@@ -64,6 +62,7 @@ struct TravelListView: View {
             }
         }
     }
+    
 }
 
 

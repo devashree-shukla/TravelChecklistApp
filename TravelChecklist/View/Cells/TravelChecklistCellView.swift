@@ -1,5 +1,5 @@
 //
-//  TripChecklistCellView.swift
+//  TravelChecklistCellView.swift
 //  TravelChecklist
 //
 //  Created by devashree shukla on 26/03/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct TripChecklistCellView: View {
+struct TravelChecklistCellView: View {
     
     var item: ItemChecklist
     
@@ -29,6 +29,6 @@ struct TripChecklistCellView: View {
 
 
 #Preview {
-    TripChecklistCellView(item: ItemChecklist(name: "Brush", isPacked: false))
+    TravelChecklistCellView(item: ItemChecklist(name: "Brush", isPacked: false))
         .modelContainer(for: Travel.self, inMemory: true)
 }

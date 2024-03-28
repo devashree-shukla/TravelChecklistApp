@@ -10,14 +10,19 @@ import SwiftData
 
 @Model
 final class ItemChecklist {
-    var id: UUID
-    var name: String
-    var category: ItemCategory
-    var isPacked: Bool
+    @Attribute var id: UUID
+    @Attribute var name: String
+    @Attribute var category: String
+    @Attribute var isPacked: Bool
     
-    init(id: UUID = UUID(), 
+    var relationshipTypeEnum: ItemCategory? {
+            get { ItemCategory(rawValue: category) }
+            set { category = newValue?.rawValue ?? "" }
+        }
+    
+    init(id: UUID = UUID(),
          name: String = "",
-         category: ItemCategory = .Extra,
+         category: String = ItemCategory.Extra.rawValue,
          isPacked: Bool = false) {
         self.id = id
         self.name = name

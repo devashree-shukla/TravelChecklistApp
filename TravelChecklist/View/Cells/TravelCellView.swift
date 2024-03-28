@@ -1,5 +1,5 @@
 //
-//  TripCellView.swift
+//  TravelCellView.swift
 //  TravelChecklist
 //
 //  Created by devashree shukla on 26/03/24.
@@ -8,21 +8,15 @@
 import SwiftUI
 import SwiftData
 
-struct TripCellView: View {
+struct TravelCellView: View {
     
     var travel: Travel
-    private var tripStatus: String {
-        travel.isOngoing ? Constants.Texts.ongoingTrip : (travel.isCompleted ? Constants.Texts.completedTrip : Constants.Texts.upcomingTrip)
-    }
-    private var tripStatusColor: Color {
-        travel.isOngoing ? .orange : (travel.isCompleted ? .green : .gray)
-    }
     
     var body: some View {
         HStack {
             Text(travel.name)
             Spacer()
-            Text(tripStatus).foregroundColor(tripStatusColor)
+            Text(travel.travelStatus).foregroundColor(travel.travelStatusColor)
             DoneImage(isDone: travel.isCompleted)
         }
         .allowsHitTesting(false)
@@ -35,6 +29,6 @@ struct TripCellView: View {
 
 
 #Preview {
-    TripCellView(travel: Travel(name: "Rishikesh", isCompleted: true))
+    TravelCellView(travel: Travel(name: "Rishikesh", isCompleted: true, checklistItems: defaultChecklistItems))
         .modelContainer(for: Travel.self, inMemory: true)
 }

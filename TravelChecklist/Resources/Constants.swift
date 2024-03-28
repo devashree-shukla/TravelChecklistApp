@@ -10,21 +10,21 @@ import Foundation
 struct Constants {
     
     struct NavigationTitles {
-        static let trips = "All Trips"
+        static let travels = "All Travels"
         static let checklists = "Checklists"
     }
     
     struct ButtonTitles {
-        static let createNewTrip = "Create New Travel"
+        static let createNewTravel = "Create New Travel"
     }
     
     struct Texts {
-        static let createNewTripTitle = "Enter New Travel Name"
+        static let createNewTravelTitle = "Enter New Travel Name"
         static let dateFormmatter = "yyyy-MM-dd HH:mm:ss"
         static let blankText = ""
-        static let completedTrip = "Completed Travel"
-        static let upcomingTrip = "Upcoming Travel"
-        static let ongoingTrip = "Ongoing Travel"
+        static let completedTravel = "Completed Travel"
+        static let upcomingTravel = "Upcoming Travel"
+        static let ongoingTravel = "Ongoing Travel"
     }
     
     struct UserDefaultKeys {
