@@ -14,11 +14,11 @@ This repository hosts a comprehensive demo project that illustrates the use of S
 - **Basic Design Patterns**: Implements basic design patterns to organize code, enhance reusability, and simplify maintenance.
 - **Code Quality**: Adheres to Swift best practices to ensure high code quality, including the use of SwiftLint for linting and code style enforcement.
 
-<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/d51a4356-1e28-44df-a865-bfe98b2ae107" width="60">
-<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/cee8d81b-2d23-4ffc-8aa4-122b8208c2a1" width="60">
-<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/31699b43-a2ef-473e-9c86-b563de41df61" width="60">
-<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/a8561b1a-b8e8-40b0-9dbb-d927e0b1d1ec" width="60">
-<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/fd4989be-f4f3-48fb-99a0-bb9e19264e9d" width="60">
+<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/d51a4356-1e28-44df-a865-bfe98b2ae107" width="120">
+<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/cee8d81b-2d23-4ffc-8aa4-122b8208c2a1" width="120">
+<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/31699b43-a2ef-473e-9c86-b563de41df61" width="120">
+<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/a8561b1a-b8e8-40b0-9dbb-d927e0b1d1ec" width="120">
+<img src="https://github.com/devashree-shukla/TravelChecklistApp/assets/38584944/fd4989be-f4f3-48fb-99a0-bb9e19264e9d" width="120">
 
 
 ## Getting Started
